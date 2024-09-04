@@ -15,15 +15,6 @@ function getHumanChoice(){
     return input;
 }
 
-function playGame(){
-    for(let i = 0;i < 5;i++){
-        let humanSelection = getHumanChoice();
-        let computerSelection = getComputerChoice();
-        playRound(humanSelection,computerSelection);
-    }
-}
-
-
 
 function playRound(humanChoice, computerChoice){
     let human = humanChoice.toLowerCase();
@@ -50,6 +41,22 @@ function playRound(humanChoice, computerChoice){
     } else if(  human === computer ) {
         console.log("Its a Draw!");
     } 
+}
+
+function playGame(){
+    for(let i = 0;i < 5;i++){
+        let humanSelection = getHumanChoice();
+        let computerSelection = getComputerChoice();
+        playRound(humanSelection,computerSelection);
+    }
+    console.log("The Match results: ");
+    if(humanScore === computerScore){
+        console.log("Its a Draw!")
+    } else if(humanScore > computerScore){
+        console.log("You won the match!");
+    } else {
+        console.log("You lost :((");
+    }
 }
 
 playGame();
