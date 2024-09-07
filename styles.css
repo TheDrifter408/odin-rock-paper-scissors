@@ -4,6 +4,9 @@
     align-items: center;
 }
 
+#btn-ctn {
+}
+
 #cntScore {
     display:flex;
     gap: 18px;

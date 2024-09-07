@@ -3,7 +3,8 @@ let humanScore = 0;
 
 const mainElement = document.querySelector("#main");
 const container = document.createElement('div');
-const ctnHeading = document.createElement('h1');
+const btnContainer = document.createElement('div');
+btnContainer.setAttribute("id","btn-ctn")
 const roundResults = document.createElement('h3');
 // The Results container
 const cntScore = document.createElement('div');
@@ -15,7 +16,6 @@ humanScoreEl.textContent = "Human: ";
 const computerScoreEl = document.createElement('p');
 computerScoreEl.setAttribute('id','computerScore');
 computerScoreEl.textContent = "Computer: ";
-ctnHeading.textContent = 'Your Choices';
 const resultsParagraph = document.createElement('h2');
 resultsParagraph.textContent = 'The Results:';
 // Creating the three choices
@@ -39,7 +39,6 @@ scissors.addEventListener('click',(e) => {
 cntScore.appendChild(humanScoreEl);
 cntScore.appendChild(computerScoreEl);
 
-container.appendChild(ctnHeading);
 container.appendChild(cntScore);
 container.appendChild(rock);
 container.appendChild(paper);
