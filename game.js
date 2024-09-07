@@ -7,12 +7,15 @@ const ctnHeading = document.createElement('h1');
 const roundResults = document.createElement('h3');
 // The Results container
 const cntScore = document.createElement('div');
+cntScore.setAttribute('id','cntScore');
 // The Results Element
 const humanScoreEl = document.createElement('p');
+humanScoreEl.setAttribute('id','humanScore');
 humanScoreEl.textContent = "Human: ";
 humanScoreEl.style.fontSize = "18px";
 humanScoreEl.style.fontWeight = "900";
 const computerScoreEl = document.createElement('p');
+computerScoreEl.setAttribute('id','computerScore');
 computerScoreEl.textContent = "Computer: ";
 computerScoreEl.style.fontSize = "18px";
 computerScoreEl.style.fontWeight = "900";

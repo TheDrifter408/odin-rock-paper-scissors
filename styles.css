@@ -1,0 +1,16 @@
+#main {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cntScore {
+    display:flex;
+    gap: 18px;
+    justify-content: center;
+}
+
+#humanScore, #computerScore {
+    font-size: "18px";
+    font-weight: 900;
+}
